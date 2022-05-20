@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
+    "@next-auth/firebase-adapter": "^0.1.2-pr.183-76202b42.8",
+    "firebase": "^9.8.1",
     "next": "12.1.6",
     "next-auth": "^4.3.4",
     "nodemailer": "^6.7.5",
