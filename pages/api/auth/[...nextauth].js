@@ -1,5 +1,6 @@
 import NextAuth from "next-auth";
 import EmailProvider from "next-auth/providers/email";
+import { MongoDBAdapter } from "@next-auth/mongodb-adapter"
 import { FirebaseAdapter } from "@next-auth/firebase-adapter";
 import { initializeApp, getApp, getApps } from "firebase/app";
 import {
@@ -9,6 +10,7 @@ import {
   addDoc, updateDoc, deleteDoc, runTransaction
 } from "firebase/firestore";
 
+import clientPromise from "lib/mongodb"
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAlkH9ybloN5z_dDkz5q9JJNsVDLdnr-tg",
@@ -22,6 +24,7 @@ const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 const db = getFirestore();
 
 export default NextAuth({
+  adapter: MongoDBAdapter(clientPromise),
   adapter: new FirebaseAdapter({
     db, collection,
     query, getDocs, where,
