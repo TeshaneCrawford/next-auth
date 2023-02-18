@@ -73,6 +73,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [ ] Add more authentication providers
 - [ ] Add tests
+- [ ] Add github actions
+- [ ] Add metadata for SEO
 - [ ] Add Zod internationalization
 - [ ] Add Algolia search
 - [ ] Add Internationalization
