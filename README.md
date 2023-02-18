@@ -1,4 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <a href="https://nextjs-mysql-auth.vercel.app/">
+    <img src="/public/logo.png" height="96">
+    <h3 align="center">Next.js Prisma PostgreSQL Auth Starter</h3>
+  </a>
+</p>
+
+<p align="center">
+This is a <a href="https://nextjs.org/">Next.js</a> starter kit that uses <a href="https://next-auth.js.org/">Next-Auth</a> for simple User Credentials, Email + Password, Google, Facebook login.<br/>
+<a href="https://www.prisma.io/">Prisma</a> as the ORM, and a PostgreSQL database to persist the data.</p>
+
+<br/>
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [Next-Auth](https://next-auth.js.org/)
+- [Prisma](https://www.prisma.io/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Playwright](https://playwright.dev/)
+- [Vanilla Extract](https://vanilla-extract.style/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [React Query](https://react-query.tanstack.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Vercel Analytics](https://vercel.com/analytics)
+- [Vercel](https://vercel.com/)
+- [Railway](https://railway.app/)
+
+<br/>
+
+## Deploy Your Own
+
+You can clone & deploy it to Vercel with one click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=[...])
+
+## Developing Locally
+
+You can clone & create this repo with the following command
+
+```bash
+npx create-next-app nextjs-typescript-starter --example "https://github.com/TeshaneCrawford/next-auth"
+```
 
 ## Getting Started
 
@@ -8,19 +52,9 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
@@ -31,8 +65,14 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Roadmap
+
+- [ ] Add more authentication providers
+- [ ] Add tests
+- [ ] Add Zod internationalization
+- [ ] Add Algolia search
+- [ ] Add Internationalization
