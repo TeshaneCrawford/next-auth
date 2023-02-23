@@ -2,11 +2,21 @@
   "name": "next-auth",
   "version": "0.1.0",
   "private": true,
+  "description": "Next.js Authentication template with NextAuth.js",
+  "license": "MIT",
+  "author": {
+    "name": "Teshane Crawford",
+    "url": "https://github.com/TeshaneCrawford"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma": "prisma",
+    "prebuild": "prisma generate",
+    "predev": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.11",
