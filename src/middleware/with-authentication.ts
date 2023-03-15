@@ -1,7 +1,7 @@
 import type { NextApiHandler, NextApiRequest, NextApiResponse } from 'next';
 import { getServerSession } from 'next-auth/next';
 
-import { authOptions } from '@/pages/api/auth/[...nextauth]';
+import { authOptions } from '@/app/api/auth/[...nextauth]';
 
 export const withAuthentication = (handler: NextApiHandler) => {
     return async (req: NextApiRequest, res: NextApiResponse) => {

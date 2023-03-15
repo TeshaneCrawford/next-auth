@@ -2,7 +2,7 @@ import type { NextApiHandler, NextApiRequest, NextApiResponse } from 'next';
 import { getServerSession } from 'next-auth/next';
 import * as z from 'zod';
 
-import { authOptions } from '@/pages/api/auth/[...nextauth]';
+import { authOptions } from '@/app/api/auth/[...nextauth]';
 
 export const schema = z.object({
     userID: z.string(),
