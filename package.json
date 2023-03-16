@@ -51,6 +51,7 @@
   },
   "devDependencies": {
     "@hookform/devtools": "^4.3.0",
+    "@total-typescript/ts-reset": "^0.4.2",
     "@types/bcrypt": "^5.0.0",
     "@types/nodemailer": "^6.4.7",
     "@types/react-redux": "^7.1.25",
