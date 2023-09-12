@@ -1,22 +1,38 @@
-import './styles/globals.css'
-import { AnalyticsWrapper } from '@/components/analytics'
+import './globals.css';
+import type { Metadata } from 'next';
+
+import ThemeRegistry from '@/lib/MuiRegistry/MuiThemeRegistry';
+import Box from '@mui/material/Box';
+
+export const metadata: Metadata = {
+  title: 'Next-Auth StarterKit',
+  description:
+    'Next-Auth StarterKit with, Next.js App Router + Material UI v5, Tailwind, and Supabase',
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
       <body>
-        {children}
-        <AnalyticsWrapper />
+        <ThemeRegistry>
+          <Box component="main"
+            sx={{
+              p: 2,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              minHeight: '100vh',
+              textAlign: 'center',
+              backgroundColor: 'background.default',
+            }}
+          >{children}</Box>
+        </ThemeRegistry>
       </body>
     </html>
-  )
+  );
 }

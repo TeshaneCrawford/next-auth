@@ -1,13 +1,13 @@
 <p align="center">
-  <a href="https://nextjs-mysql-auth.vercel.app/">
+  <a href="https://github.com/TeshaneCrawford/next-auth">
     <img src="/public/logo.png" height="96">
-    <h3 align="center">Next.js Prisma PostgreSQL Auth Starter</h3>
+    <h3 align="center">Next.js Supabase PostgreSQL NextAuth Starter</h3>
   </a>
 </p>
 
 <p align="center">
 This is a <a href="https://nextjs.org/">Next.js</a> starter kit that uses <a href="https://next-auth.js.org/">Next-Auth</a> for simple User Credentials, Email + Password, Google, Facebook login.<br/>
-<a href="https://www.prisma.io/">Prisma</a> as the ORM, and a PostgreSQL database to persist the data.</p>
+It uses <a href="https://supabase.io/">Supabase</a> for the database 
 
 <br/>
 
@@ -15,12 +15,12 @@ This is a <a href="https://nextjs.org/">Next.js</a> starter kit that uses <a hre
 
 - [Next.js](https://nextjs.org/)
 - [Next-Auth](https://next-auth.js.org/)
-- [Prisma](https://www.prisma.io/)
+- [Supabase](https://supabase.io/)
 - [PostgreSQL](https://www.postgresql.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Playwright](https://playwright.dev/)
-- [Vanilla Extract](https://vanilla-extract.style/)
+- [Material UI](https://material-ui.com/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [React Query](https://react-query.tanstack.com/)
 - [React Hook Form](https://react-hook-form.com/)
