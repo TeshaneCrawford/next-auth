@@ -1,4 +1,5 @@
 import './globals.css';
+import { Toaster } from 'sonner';
 import type { Metadata } from 'next';
 
 import ThemeRegistry from '@/lib/MuiRegistry/MuiThemeRegistry';
@@ -30,7 +31,9 @@ export default function RootLayout({
               textAlign: 'center',
               backgroundColor: 'background.default',
             }}
-          >{children}</Box>
+          >{children}
+            <Toaster />
+          </Box>
         </ThemeRegistry>
       </body>
     </html>
