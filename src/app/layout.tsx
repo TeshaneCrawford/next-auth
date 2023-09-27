@@ -27,11 +27,12 @@ export default function RootLayout({
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              minHeight: '100vh',
+              minHeight: '100dvh',
               textAlign: 'center',
-              backgroundColor: 'background.default',
+              backgroundImage: 'linear-gradient(to bottom, #f2f2f2, #ffffff)',
             }}
-          >{children}
+          >
+            {children}
             <Toaster />
           </Box>
         </ThemeRegistry>
