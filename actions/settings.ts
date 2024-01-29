@@ -16,7 +16,7 @@ export const settings = async (
 ) => {
   const user = await currentUser();
 
-  if (!user) {
+  if (!user || !user.id) {
     return { error: "Unauthorized" }
   }
 
