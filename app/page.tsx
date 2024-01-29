@@ -1,5 +1,6 @@
 // import Image from 'next/image'
 
+import { EnvelopeOpenIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { LoginButton } from "@/components/auth/LoginButton";
@@ -29,7 +30,7 @@ export default function Home() {
         <div className="mt-4 text-center">
       <LoginButton asChild>
           <Button size="lg">
-            Sign in
+          <EnvelopeOpenIcon className="mr-2 h-4 w-4" /> Sign in
           </Button>
         </LoginButton>
       </div>
@@ -41,7 +42,7 @@ export default function Home() {
             Get Started
           </Button>
           <Button size="lg">
-            Star on GitHub
+           <GitHubLogoIcon className="mr-2 h-4 w-4" /> Star on GitHub
           </Button>
         </div>
       </div>
