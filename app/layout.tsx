@@ -9,8 +9,8 @@ import { Toaster } from "@/components/ui/sonner";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Next.js + Next Auth TypeScript Template',
-  description: 'Next.js + Next Auth TypeScript Template',
+  title: 'Next.js starter template with Auth.js',
+  description: 'Next.js starter template with Auth.js, TypeScript, Tailwind CSS, and Vercel Analytics.',
 }
 
 export default async function RootLayout({
@@ -23,8 +23,11 @@ export default async function RootLayout({
     <SessionProvider session={session}>
       <html lang="en">
         <body className={inter.className}>
+          <div className="fixed h-screen w-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-100 to-purple-200" />
           <Toaster />
+          <main className="flex min-h-screen w-full flex-col items-center justify-center py-32">
           {children}
+          </main>
         </body>
       </html>
     </SessionProvider>
